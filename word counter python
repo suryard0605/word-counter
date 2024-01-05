@@ -1,0 +1,18 @@
+def word_counter(sentence):
+    try:
+        # Split the input sentence into words using space as the delimiter
+        words = sentence.split()
+        
+        # Count the number of words
+        word_count = len(words)
+        
+        # Display the word count
+        print(f"Word count: {word_count}")
+    except Exception as e:
+        print(f"Error: {e}")
+
+# Get user input
+user_input = input("Enter a sentence: ")
+
+# Call the word_counter function with the user input
+word_counter(user_input)
